@@ -69,7 +69,7 @@ export const createNewIssue = functions.https.onRequest(async (request, response
       const donationTitle = request.body.language === 'de' ? 'Bitte unterstützt uns!'
                                                             : 'Please support us!';
 
-      const donationText = request.body.language === 'de' ? 'Squirrel News finanziert sich hauptsächlich durch Spenden. Damit das klappt, brauchen wir euch alle! Bitte unterstützt uns jetzt mit einem regelmäßigen Betrag in der Höhe eurer Wahl! quirrel News finanziert sich ausschließlich aus kleinen und mittleren Spenden. Dafür brauchen wir auch dich! Bitte unterstütze uns mit einem monatlichen oder jährlichen Betrag in der Höhe deiner Wahl!'
+      const donationText = request.body.language === 'de' ? 'Squirrel News finanziert sich hauptsächlich durch Spenden. Damit das klappt, brauchen wir euch alle! Bitte unterstützt uns jetzt mit einem regelmäßigen Betrag in der Höhe eurer Wahl!'
                                                           : 'Squirrel News is a non-profit organisation and relies on donations. Please support us now to help us continue our work and keep Squirrel News running!';
                                                           
       const donationURL = request.body.language === 'de' ? 'https://squirrel-news.net/de/unterstuetzen/'
